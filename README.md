@@ -2,7 +2,7 @@
 
 An aiohttp/Asyncio worker for the [Database Query Optimizer course backend](https://github.com/SachaXoDev/Khodina_IU5-51B_Web_Labs_2026_Database_query_optimizer). It accepts a rotation job, returns HTTP 202 immediately, then computes new angles (radians, wrapped into `[0, 2π)`) and sends them to the main API. The worker has no database or durable queue. A second request for the same ID while a job is pending is acknowledged but does not replace it. Failed callbacks are logged, not retried.
 
-This is the local source for the intended separate repository `https://github.com/SachaXoDev/database-query-optimizer-rotation`. That URL is a publication target, not a claim that the repository is already online. The backend integration belongs on `extras/async-rotation` in the course repository; use a backend checkout containing that integration, not the default branch.
+Run the [backend `extras/async-rotation` branch](https://github.com/SachaXoDev/Khodina_IU5-51B_Web_Labs_2026_Database_query_optimizer/tree/extras/async-rotation), not the backend's default branch. The [React `extras/async-rotation` branch](https://github.com/SachaXoDev/database-query-optimizer-frontend/tree/extras/async-rotation) displays the resulting model rotations.
 
 ## Run locally
 
